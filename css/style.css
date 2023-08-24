@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonteVerdana);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fontePassion: 'Passion One', cursive;
+    --fonteNoto: 'Noto Serif', serif;
+    --fonteSriracha: 'Sriracha', cursive;
+    --fonteVerdana: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: black;
+    height: 200px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+header h1 {
+    color: white;
+    font-family: var(--fontePassion);
+    font-size: 4.7vw;
+    /* deixa a fonte toda maiúscula e mantém a inicial de uma palavra um pouco maior */
+    font-variant: small-caps;
+}
+
+header p {
+    color: white;
+    font-family: var(--fonteNoto);
+    font-size: 1.1em;
+    padding-top: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(236, 182, 111);
+}
+
+main p {
+    font-family: var(--fonteSriracha);
+    font-size: 1.3em;
+    line-height: 40px;
+    white-space: pre-line;
+    padding-left: 30px;
+}
+
+article {
+    padding: 40px 0px;
+}
+
+#bg-1 pre,
+#bg-2 pre {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 25px;
+}
+
+#bg-1 p,
+#bg-2 p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.525);
+    width: 320px;
+}
+
+#bg-1 {
+    background-image: url('../img/background001.jpg');
+}
+
+#bg-2 {
+    background-image: url('../img/background002.jpg');
+}
+
+#bg-1, #bg-2{
+    background-size: cover;
+    background-position: right center;
+    box-shadow: rgba(0, 0, 0, 0.573) 9px 7px 13px 0px inset;
+    background-attachment: fixed;
+}
+
+#bg-2 p {
+    text-shadow: 2px 2px 1px black;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.952);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
